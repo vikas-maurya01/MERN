@@ -1,0 +1,41 @@
+.cont {
+    height: 700px;
+    border: 5px solid red;
+    background-color: yellowgreen;
+    display: grid;
+
+
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+        "hd hd hd hd hd  "
+        "sd sd main main main"
+        "ft  ft ft ft ft";
+}
+
+.box {
+    border: 2px solid black;
+}
+
+/* grid-area */
+
+/* #b-1{
+    grid-area: 1/1/2/4; */
+/* } */
+
+/* grid templet area */
+
+#b-1 {
+    grid-area: hd;
+}
+
+#b-2 {
+    grid-area: sd;
+}
+
+#b-3 {
+    grid-area: main;
+}
+
+#b-4 {
+    grid-area: ft;
+}
