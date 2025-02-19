@@ -1,0 +1,23 @@
+.cont{
+    width: 80vw;
+    height: 80vh;
+    background-color: firebrick;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+.box{
+    margin: 100px;
+    border: 2px solid yellow;
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    transition: 3s ease-in;
+}
+.box:hover{
+    background-color: rgb(255, 251, 0);
+    box-shadow:  20px 3px 10px;
+    transform: translateX(250px) rotate(360deg) scale(2);
+
+}
