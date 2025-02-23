@@ -129,7 +129,6 @@
     box-shadow: 5px 5px 7px 0 #0000003f;
     font-size: 18px;
     transition: all 0.5s;
-    background-color: rgb(255, 0, 0);
     position: relative;
     z-index: 1;
     border: 3px solid transparent;
@@ -377,6 +376,7 @@
 }
 
 .project-content{
+    width: 80%;
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -389,7 +389,7 @@
 
 }
 .project-content-right{
-    right: 10%;
+    right: -10%;
 }
 .project-content-left{
     right: 10%;
@@ -412,7 +412,7 @@
 
 .project-subheading{
     font-size: 16px;
-    width: 70%;
+    width: 60%;
     font-style: italic;
 }
 
@@ -422,9 +422,13 @@
     align-items: center;
 
 }
-
-.btn-project:hover{
+.btn-project{
     border: none;
+}
+.btn-project:hover{
+
+    border: none;
+
 }
 
 .icon{
