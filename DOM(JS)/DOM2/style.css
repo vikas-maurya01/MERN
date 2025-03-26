@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 100px;
+}
+.para{
+    font-size: 10em;
+    color: brown;
+}
+
+.box{   
+    width: 60%;
+    margin: 50px auto;
+}
+.btn{
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+}

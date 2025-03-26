@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
 
+html { scroll-behavior: smooth; }
+
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: "Be Vietnam Pro", serif;
 
 }
@@ -598,4 +600,48 @@
 .submit-icon{
     padding: 0 1rem;
     font-size: 1.5rem;
+}
+
+footer{
+    position: relative;
+    margin-top: -1px;
+    background-color: #343d68;
+    padding: 5rem;
+}
+
+.foot-cont{
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    justify-content: space-between;
+    align-items: center ;
+}
+.faded-text-foot{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    user-select: none;
+    color: #535c87;
+    font-size: 5em;
+    font-weight: 900;
+}
+
+.foot-nav{
+    display: flex;
+    gap: 1.2rem;
+}
+.foot-nav div a{
+    
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.contect-logo{
+    display: flex;
+    gap: 1.2rem;
+}
+
+
+@media (max-width:1250px){
+    
 }
