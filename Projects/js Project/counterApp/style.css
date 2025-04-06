@@ -56,4 +56,10 @@ h2{
 }
 .para>div{
     font-size: 30px;
+    font-weight: 600;
+}
+.para > i{
+    padding-top: 5px;
+    font-size: 25px;
+    font-weight: 600;
 }
