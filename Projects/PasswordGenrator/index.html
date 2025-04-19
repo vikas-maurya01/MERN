@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Password Generator</h1>
+        <div class="display-cont">
+            <input readonly placeholder="Password" data-DisplayPass>
+            <button class="copy-btn">
+                <span data-copyMsg=""></span>
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+        <div class="input-cont">
+            <div class="pass-length-cont">
+                <p>Lassword Length</p>
+                <p data-lengthCont>0</p>
+            </div>
+            <input type="range" min="1" max="20" class="slider" step="1" data-lenghtSlider>
+
+
+            <div class="cheakbox">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase"> Include Uppercase Letter</label>
+            </div>
+            <div class="cheakbox">
+                <input type="checkbox" id="lowerCase">
+                <label for="LowerCase"> Include Lowercase Letter</label>
+            </div>
+            <div class="cheakbox">
+                <input type="checkbox" id="numbers">
+                <label for="numbers"> Include Numbers</label>
+            </div>
+            <div class="cheakbox">
+                <input type="checkbox" id="symbols">
+                <label for="symbols"> Include Symbols</label>
+            </div>
+
+
+            <div class="strenght-cont">
+                <p>Strength</p>
+                <div data-indicator class="circule" ></div>
+            </div>
+            
+            <button class="generate-pass">Generate Password</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
