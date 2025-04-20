@@ -19,6 +19,7 @@ let checkCount = 0;
 
 handleSlider();
 
+setIndicator("#ccc")
 
 function handleSlider() {
     inputSlider.value = passLength;
@@ -156,9 +157,6 @@ function generatePassword() {
 
     let funcSArr = [];
 
-    // if(funcSArr.length==0){
-    //     return;
-    // }
 
     if (uppCaseCheck.checked) {
         funcSArr.push(getRandUpperCase);

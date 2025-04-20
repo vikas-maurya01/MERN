@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="wrapper">
+    <div class="container">
         <h1>Password Generator</h1>
         <div class="display-cont">
-            <input readonly placeholder="Password" data-DisplayPass>
+            <input readonly placeholder="Password" class="display" data-DisplayPass>
             <button class="copy-btn">
-                <span data-copyMsg=""></span>
+                <span data-copyMsg></span>
                 <i class="fa-regular fa-copy"></i>
             </button>
         </div>
         <div class="input-cont">
             <div class="pass-length-cont">
-                <p>Lassword Length</p>
+                <p>Password Length</p>
                 <p data-lengthCont>0</p>
             </div>
             <input type="range" min="1" max="20" class="slider" step="1" data-lenghtSlider>
@@ -44,7 +45,7 @@
             </div>
 
 
-            <div class="strenght-cont">
+            <div class="strength-cont">
                 <p>Strength</p>
                 <div data-indicator class="circule" ></div>
             </div>
