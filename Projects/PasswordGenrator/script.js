@@ -24,6 +24,9 @@ setIndicator("#ccc")
 function handleSlider() {
     inputSlider.value = passLength;
     lenghtSliderVal.innerText = passLength;
+    let min= inputSlider.min;
+    let max= inputSlider.max;
+    inputSlider.style.backgroundSize=((passLength-min)*100/(max-min)+"% 100%")
 
 }
 // inputSlider.oninput= ()=> {lenghtSliderVal.innerHTML = inputSlider.value;}
