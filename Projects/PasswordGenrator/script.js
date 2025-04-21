@@ -30,6 +30,7 @@ function handleSlider() {
 
 function setIndicator(color) {
     passIndicator.style.backgroundColor = color;
+    passIndicator.style.boxShadow=`0px 0px 12px 1px ${color}`;
 }
 
 function getRandomInt(min, max) {
