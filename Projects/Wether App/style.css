@@ -115,7 +115,7 @@ h1 {
 }
 
 .user-weather-info-cont{
-    /* display: none; */
+    display: none;
 }
 .user-weather-info-cont.active{
     display: flex;
