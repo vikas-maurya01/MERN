@@ -10,9 +10,10 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
 
         <div class="weather-cont">
 
-            <div class="grant-location-access-cont">
+            <div class="grant-location-access-cont sub-cont">
                 <img src="assets/location.png" alt="location" height="80" width="80" loading="lazy">
                 <p>Grant Location Access</p>
                 <p class="discrip">Alloe access to get Weather Informtion</p>
@@ -34,53 +35,54 @@
 
 
             </div>
-        </div>
-
-        <form class="search-form " data-searchForm>
-            <input type="text" placeholder="Search for City...." data-searchInput>
-            <p class="error-city"></p>
-            <button type="submit" class="search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-
-        </form>
 
 
+            <form class="search-form " data-searchForm>
+                <input type="text" placeholder="Search for City...." data-searchInput>
+                <p class="error-city"></p>
+                <button type="submit" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
 
-        <div class="loading-cont">
-            <img src="assets/loading.gif" width="150" height="150" alt="">
-            <p>Loading</p>
-        </div>
+            </form>
 
 
-        <div class="user-weather-info-cont">
-            <div class="name">
-                <p data-cityName></p>
-                <img data-contryIcon>
-            </div>
-            <p data-weatherDesc></p>
-            <img data-weatherIcon>
-            <p data-temp></p>
 
-            <div class="parameter-cards">
-                <div class="parameter">
-                    <img src="./assets/wind.png" alt="wind icon">
-                    <p>Wind Speed</p>
-                    <p data-windSpeed></p>
-                </div>
-                <div class="parameter">
-                    <img src="./assets/humidity.png" alt="humidity icon">
-                    <p>Humidity</p>
-                    <p data-humidity></p>
-                </div>
-                <div class="parameter">
-                    <img src="./assets/cloud.png" alt="cloud icon">
-                    <p>Cloud</p>
-                    <p data-cloudiness></p>
-                </div>
-
+            <div class="loading-cont sub-cont">
+                <img src="assets/loading.gif" width="150" height="150" alt="">
+                <p>Loading</p>
             </div>
 
+
+            <div class="user-weather-info-cont sub-cont">
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-contryIcon>
+                </div>
+                <p data-weatherDesc></p>
+                <img data-weatherIcon>
+                <p data-temp></p>
+
+                <div class="parameter-cards">
+                    <div class="parameter">
+                        <img src="./assets/wind.png" alt="wind icon">
+                        <p>Wind Speed</p>
+                        <p data-windSpeed></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="./assets/humidity.png" alt="humidity icon">
+                        <p>Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="./assets/cloud.png" alt="cloud icon">
+                        <p>Cloud</p>
+                        <p data-cloudiness></p>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
 
