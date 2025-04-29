@@ -72,7 +72,7 @@ async function fetchWeatherInfo(coordinates) {
 
 
     try {
-        const responce = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${Api_Key}`);
+        const responce = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${Api_Key}&units=metric`);
         let data = await responce.json();
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");
@@ -103,10 +103,10 @@ function renderData(data) {
     countryImg.src = `https://flagcdn.com/144x108/${data?.sys?.country.toLowerCase()}.png`
     weatherDesc.innerText = data?.weather?.[0]?.description;
     weatherIcon.src = `https://openweathermap.org/img/wn/${data?.weather?.[0]?.icon}@2x.png`;
-    temprature.innerText = data?.main?.temp;
-    windSpeed.textContent = data?.wind?.speed;
-    humidity.textContent = data?.main?.humidity;
-    cloudiness.textContent = data?.clouds?.all;
+    temprature.innerText = `${data?.main?.temp} °C `;
+    windSpeed.textContent = `${data?.wind?.speed} M/Sec`;
+    humidity.textContent = `${data?.main?.humidity} %`;
+    cloudiness.textContent = `${data?.clouds?.all} %`;
 
 }
 
@@ -136,7 +136,7 @@ async function fetchSearchedWeatherInfo(city) {
     loadingScreen.classList.add("active");
 
     try {
-        const responce = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Api_Key}`);
+        const responce = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Api_Key}&units=metric`);
         let data = await responce.json();
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");

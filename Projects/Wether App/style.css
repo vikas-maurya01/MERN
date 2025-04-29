@@ -48,10 +48,6 @@ h1 {
 }
 
 .weather-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-block: 4rem;
 }
 
@@ -129,6 +125,15 @@ h1 {
 
 }
 
+.user-weather-info-cont p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.user-weather-info-cont img{
+    width: 90px;
+    height: 90px;
+}
 .name p{
     font-size: 2rem;
 
@@ -136,4 +141,89 @@ h1 {
 .name img{
     width: 30px;
     height: 30px;
+}
+
+.user-weather-info-cont p[data-temp]{
+    font-size: 2.75rem;
+    font-weight: 700;
+
+}
+.parameter-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px;
+    margin-top: 2rem;
+}
+.parameter{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(219, 226, 239, 0.5) ;
+    max-width: 200px;
+    width: 30%;
+    border-radius: 5px;
+    padding: 1rem;
+    gap: 5px 0;
+    align-items: center;
+}
+
+.parameter img{
+    width: 50px;
+    height: 50px;
+}
+.parameter p:first-of-type{
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.parameter p:last-of-type{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.search-form{
+    display: none;
+    width: 90%;
+    max-width: 550px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.search-form.active{
+    display: flex;
+
+}
+.search-form input{
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    background-color:rgba(219, 226, 239, 0.5) ;
+    border-radius: 10px;
+}
+    
+.search-form input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-form input:focus{
+    outline:3px solid rgba(255, 255, 255, 0.7);
+}
+
+.search-form .search-btn{
+    color: rgba(255, 255, 255, 0.7);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    background-color: var(--colorDark2);
+    border-radius: 100%;
+    cursor: pointer;
 }
