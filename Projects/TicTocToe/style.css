@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+#wraper {
+    width: 100vw;
+    height: 100vh;
+    background: #2a2a3d;
+    background: linear-gradient(8754deg, rgba(42, 42, 61, 1) 0%, rgba(29, 29, 89, 1) 35%, #64d1fc 100%);
+    display: grid;
+    place-items: center ;
+
+}
+
+.game-info{
+    color: white;
+    padding: 0.5rem 3rem;
+    position: absolute;
+    top: 3rem;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.25);
+    text-align: center;
+}
+
+.tic-tac-toe{
+    margin-top:5rem ;
+    display: grid;
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 1rem;
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+}
+.box{
+    aspect-ratio: 1/1;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    width: 100%;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.box1, .box2, .box4, .box5{
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+.box7, .box8{
+    border-right: 2px solid white;
+}
+
+.btn{
+    position: absolute;
+    bottom: 3rem;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem 2rem;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.25);
+    text-align: center;
+    display: none;
+}
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgba(0, 255, 0, 0.3);
+}
