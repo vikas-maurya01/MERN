@@ -5,37 +5,33 @@ import Card from './Card'
 function Product() {
     const resp = [
         {
-            name: "vikas",
-            date: 22,
-            month: "May",
-            year: 2001
+            id: 1,
+            name: "ESP32",
+            date: "2025-05-10"
 
         },
         {
-            name: "Book",
-            date: 12,
-            month: "Jan",
-            year: 2000
+            id: 2,
+            name: "Moter",
+            date: "2000-01-12"
         },
         {
-            name: "Nancy",
-            date: 22,
-            month: "April",
-            year: 2002
+            id: 3,
+            name: "Pump",
+            date: "2002-04-22"
         },
         {
-            name: "Jaanu",
-            date: 22,
-            month: "Aug",
-            year: 2003
+            id: 4,
+            name: "DHT 11",
+            date: "2003-05-21"
         }
     ]
     return (
         <Card>
-            <ProductItem name={resp[0].name} day={resp[0].date} month={resp[0].month} year={resp[0].year}></ProductItem>
-            <ProductItem name={resp[1].name} day={resp[1].date} month={resp[1].month} year={resp[1].year}></ProductItem>
-            <ProductItem name={resp[2].name} day={resp[2].date} month={resp[2].month} year={resp[2].year}></ProductItem>
-            <ProductItem name={resp[3].name} day={resp[3].date} month={resp[3].month} year={resp[3].year}></ProductItem>
+            <ProductItem name={resp[0].name} pdate={resp[0].date}/>
+            <ProductItem name={resp[1].name} pdate={resp[1].date}/>
+            <ProductItem name={resp[2].name} pdate={resp[2].date}/>
+            <ProductItem name={resp[3].name} pdate={resp[3].date}/>
         </Card>
     )
 }

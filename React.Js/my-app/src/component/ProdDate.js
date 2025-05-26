@@ -1,6 +1,6 @@
-import './Date.css';
+import './ProdDate.css';
 
-function Date(props){ 
+function ProdDate(props){ 
     return(
         <div className="date">
         <span>{props.day} </span>
@@ -10,4 +10,4 @@ function Date(props){
     )
 }
 
-export default Date;
+export default ProdDate;
