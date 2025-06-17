@@ -1,18 +1,22 @@
 import "./page.css"
-import React ,{ useState } from "react";
+import React, { useState } from "react";
 
-function Page(){
-    let[count, incri]=useState();
-    count=0
-    incriment()
-        count++;
-    
-    return(
-        <div>
+function Page() {
+    let [count, incri] = useState(0);
+    function incriment() {
+        count = incri(count + 1);
+    }
+    function decriment() {
+        count = incri(count - 1);
+    }
+    return (
+        <div className="box">
             <h1>Counter App</h1>
-            <button onClick={incriment}>+</button>
-            <span>{count}</span>
-            <button>-</button>
+            <div>
+                <button onClick={incriment} >+</button>
+                <span>{count}</span>
+                <button onClick={decriment}>-</button>
+            </div>
         </div>
     )
 }
